@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("one.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    list-style: none;
+    color: white;
+    font-size: 17px;
+}
+
+a:hover{
+    color: rgb(27, 4, 84);
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a{
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 19px;
+}
+ul{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.toggle_btn{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn{
+    background-color: rgb(27, 4, 84);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.action_btn:hover{
+    background-color: white;
+    color: rgb(27, 4, 84);
+
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: rgb(27, 4, 84);
+}
+
+.hero h1{
+    font-size: 5rem;
+    /* color: lavenderblus */
+}
+
+.hero p{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:720px) {
+    ul, .navbar .action_btn{
+        display: none;
+    }
+
+    .toggle_btn{
+        display: block;
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .hero p{
+        font-size: 25px;
+    }
+
+    .navbar{
+        width: 90%;
+    }
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur (15px);
+    overflow: hidden;
+    height: 0;
+    transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.dropdown li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+
+}
+
+.dropdown .action_btn{
+    width: 100%;
+    text-align: center;
+
+}
